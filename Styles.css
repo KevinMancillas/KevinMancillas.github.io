@@ -46,7 +46,7 @@
 .descripcion{
     text-align: center;
     font-size: 40px;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Courier New', Courier, monospace;
     background: linear-gradient(90deg, 
     #FF0000, 
     #ffff00, 
@@ -63,7 +63,7 @@ animation: animate 10s linear infinite;
     margin: 20px auto;  /* Añade margen arriba/abajo y centra automáticamente */
     text-align: center;
     font-size: 100px;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Courier New', Courier, monospace;
     background: linear-gradient(90deg, 
         #FF0000, 
         #ffff00, 
