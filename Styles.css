@@ -1,0 +1,91 @@
+@media screen and (max-width: 600px) {
+    .titulo {
+      font-size: 50px;
+    }
+    .descripcion {
+      font-size: 25px;
+    }
+  }
+/* Asegurar que los contenedores sean flexibles y no rompan el diseño */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    width: 90%;
+  }
+  
+  /* Evitar que haya desplazamiento horizontal innecesario */
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Ajustar fuentes en pantallas pequeñas */
+  @media screen and (max-width: 768px) {
+    .mensaje {
+      font-size: 18px;
+    }
+    .titulo {
+      font-size: 50px;
+      margin-bottom: 100px;
+    }
+    #lyrics {
+      font-size: 14px;
+      margin-bottom: 530px;
+      letter-spacing: 3px;
+    }
+  }
+  
+  /* Ajustes adicionales para móviles más pequeños */
+  @media screen and (max-width: 480px) {
+    .mensaje {
+      font-size: 16px;
+    }
+  }
+    
+.fondo{
+    background-color:  black;
+    color: white;
+}
+.descripcion{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Press Start 2P', cursive;
+    background: linear-gradient(90deg, 
+    #FF0000, 
+    #ffff00, 
+    #0033ff, 
+    #FF0000);
+background-size: 400%;
+word-spacing: 5px;
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+animation: animate 10s linear infinite;
+}
+.titulo {
+    position: relative; /* Cambiado de absolute a relative */
+    margin: 20px auto;  /* Añade margen arriba/abajo y centra automáticamente */
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Press Start 2P', cursive;
+    background: linear-gradient(90deg, 
+        #FF0000, 
+        #ffff00, 
+        #0033ff, 
+        #FF0000);
+    background-size: 400%;
+    word-spacing: 5px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
+}
+
